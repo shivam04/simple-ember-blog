@@ -1,0 +1,18 @@
+<h1> Create Post </h1>
+<form>
+	<div>
+		<label>Title</label>
+		{{input type="text" value=title placeholder="Title"}}
+	</div>
+	<div>
+		<label>Description</label>
+		{{textarea value=description placeholder="Description"}}
+	</div>
+	<button {{action 'addData'}} >Submit</button> 
+</form>
+<br>
+{{#link-to 'application'}}Home{{/link-to}}
+{{#link-to 'posts'}}Show All Posts{{/link-to}}
+
+
+{{outlet}}
